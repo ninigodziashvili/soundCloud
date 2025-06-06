@@ -122,3 +122,8 @@ body {
     display: block !important;
   }
 }
+
+.main-content {
+  padding: 10em;
+  margin: 10em;
+}
