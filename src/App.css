@@ -7,6 +7,11 @@
 body {
   margin: 0;
   font-family: "Arial", sans-serif;
+  background: linear-gradient(to top, rgb(19, 10, 8), rgb(28, 16, 13), rgb(90, 51, 41));
+}
+
+.root {
+  height: 100%;
 }
 
 .sidebar {
@@ -14,7 +19,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #390a57;
+  background: linear-gradient(to top, rgb(19, 10, 8), rgb(28, 16, 13), rgb(90, 51, 41));
   padding-top: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transition: width 0.3s;
@@ -50,7 +55,7 @@ body {
 }
 
 .sidebar li a:hover {
-  background-color: #6a13a0;
+  background: linear-gradient(to left, rgb(20, 10, 7), rgb(22, 12, 9), rgb(65,28,22,255), rgba(218,51,17,255));
 }
 
 .sidebar .icon {
@@ -71,7 +76,13 @@ body {
 .main-content {
   padding: 20px;
   transition: margin-left 0.3s;
-  margin-left: 0;
+  margin-left: 17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  border-radius: 10px;
+  background-color: white;
+  height: 100em;
 }
 
 .main-content.with-sidebar {
@@ -121,4 +132,29 @@ body {
   .sidebar .btn-close {
     display: block !important;
   }
+}
+
+.main-logo {
+  padding: 2em;
+}
+
+.main-logo img {
+  width: 5em;
+  height: 5em;
+  border-radius: 10px;
+}
+
+.perfile-datos {
+  margin-top: 2em;
+  color: white;
+  margin-bottom: 2.5em;
+}
+
+.perfile-datos p {
+  margin-bottom: 1em;
+  color: rgb(197, 196, 196);
+}
+
+.child {
+  margin-left: 3em;
 }
