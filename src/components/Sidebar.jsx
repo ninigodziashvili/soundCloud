@@ -36,14 +36,21 @@ function Sidebar() {
                 <ul>
                     <li className="parent">
                         <a href="#">
-                            <i className="fas fa-tachometer-alt icon"></i> Dashboard
+                            <i className="fas fa-tachometer-alt icon"></i> Menu
                         </a>
+                       <a href="" className="child">Home</a>
+                       <a href="" className="child">Genres</a>
+                       <a href="" className="child">Albums</a>
+                       <a href="" className="child">Artists</a>
                     </li>
 
                     <li className="parent">
                         <a href="#">
-                            <i className="fas fa-file-alt icon"></i> Posts
+                            <i className="fas fa-file-alt icon"></i> Library
                         </a>
+                       <a href="" className="child">Favorites</a>
+                       <a href="" className="child">Popular</a>
+                       <a href="" className="child">My playlist</a>
                     </li>
 
                     <li
