@@ -38,19 +38,19 @@ function Sidebar() {
                         <a href="#">
                             <i className="fas fa-tachometer-alt icon"></i> Menu
                         </a>
-                       <a href="" className="child">Home</a>
-                       <a href="" className="child">Genres</a>
-                       <a href="" className="child">Albums</a>
-                       <a href="" className="child">Artists</a>
+                       <a href="" className="child">Inicio</a>
+                       <a href="" className="child">Géneros</a>
+                       <a href="" className="child">Álbumes</a>
+                       <a href="" className="child">Cantantes</a>
                     </li>
 
                     <li className="parent">
                         <a href="#">
                             <i className="fas fa-file-alt icon"></i> Library
                         </a>
-                       <a href="" className="child">Favorites</a>
+                       <a href="" className="child">Favoritas</a>
                        <a href="" className="child">Popular</a>
-                       <a href="" className="child">My playlist</a>
+                       <a href="" className="child">Mi lista</a>
                     </li>
 
                     <li
