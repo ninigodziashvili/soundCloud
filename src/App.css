@@ -14,7 +14,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #390a57;
+  background: linear-gradient(to bottom,rgb(61, 32, 24), rgb(54,28,21));
+  
   padding-top: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transition: width 0.3s;
@@ -126,4 +127,26 @@ body {
 .main-content {
   padding: 10em;
   margin: 10em;
+}
+
+
+.main-logo {
+  padding: 2em;
+}
+
+.main-logo img {
+  width: 5em;
+  height: 5em;
+  border-radius: 10px;
+}
+
+.perfile-datos {
+  margin-top: 2em;
+  color: white;
+  margin-bottom: 2.5em;
+}
+
+.perfile-datos p {
+  margin-bottom: 1em;
+  color: rgb(197, 196, 196);
 }

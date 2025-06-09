@@ -16,16 +16,22 @@ function Sidebar() {
     };
 
     return (
+
         <div>
+
             <a className="toggle-btn" onClick={toggleSidebar} style={{ cursor: "pointer" }}>
                 <i className="fas fa-bars"></i>
             </a>
 
             {/* Sidebar */}
             <div className={`sidebar ${sidebarOpen ? "open" : "closed"}`}>
-                <a className="btn-close" onClick={toggleSidebar} style={{ cursor: "pointer" }}>
-                    <i className="fas fa-close"></i>
-                </a>
+                <div className="main-logo">
+                    <img src="https://images.seeklogo.com/logo-png/15/1/soundcloud-logo-png_seeklogo-157945.png" alt="" />
+                    <div className="perfile-datos">
+                        <p>Hi</p>
+                        <h3>Nino Godziashvili</h3>
+                    </div>
+                </div>
 
                 <ul>
                     <li className="parent">
