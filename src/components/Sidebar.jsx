@@ -4,15 +4,12 @@ import React, { useState } from "react";
 
 function Sidebar() {
     const [sidebarOpen, setSidebarOpen] = useState(true);
-    const [openSubMenus, setOpenSubMenus] = useState({});
 
     const toggleSidebar = () => {
         setSidebarOpen(!sidebarOpen);
     };
     return (
-
         <div>
-
             <a className="toggle-btn" onClick={toggleSidebar} style={{ cursor: "pointer" }}>
                 <i className="fas fa-bars"></i>
             </a>
