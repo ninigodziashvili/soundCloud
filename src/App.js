@@ -1,4 +1,5 @@
 import "./App.css";
+import ListeningCard from "./components/ListeningCard";
 import Sidebar from "./components/Sidebar";
 
 function App() {
@@ -7,8 +8,7 @@ function App() {
     <>
       <Sidebar />
       <div className="main-content">
-        <h1>Main Content Area</h1>
-        <p>This is where your main content will be displayed.</p>
+        <ListeningCard/>
       </div>
     </>
   );
