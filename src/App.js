@@ -1,4 +1,5 @@
 import "./App.css";
+import MainCard from "./components/MainCard";
 import ListeningCard from "./components/ListeningCard";
 import Sidebar from "./components/Sidebar";
 

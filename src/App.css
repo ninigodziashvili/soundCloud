@@ -10,8 +10,9 @@ body {
   background: linear-gradient(to top, rgb(19, 10, 8), rgb(28, 16, 13), rgb(90, 51, 41));
 }
 
-.root {
+:root {
   height: 100%;
+  --orange: rgba(253, 74, 41, 255);
 }
 
 .sidebar {
@@ -55,7 +56,7 @@ body {
 }
 
 .sidebar li a:hover {
-  background: linear-gradient(to left, rgb(20, 10, 7), rgb(22, 12, 9), rgb(65,28,22,255), rgba(218,51,17,255));
+  background: linear-gradient(to left, rgb(20, 10, 7), rgb(22, 12, 9), rgb(65, 28, 22, 255), rgba(218, 51, 17, 255));
 }
 
 .sidebar .icon {
@@ -145,9 +146,51 @@ body {
 .listening-card-container {
   width: 45em;
   height: 25em;
-  background-color: rgba(253,74,41,255);
+  background-color: rgba(253, 74, 41, 255);
   border-radius: 10px;
   margin: 3em 0 0 1em;
+  color: white;
+}
+
+.listening-card-trends {
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-items: left;
+}
+
+.listening-card-trends span {
+  color: #9c9797;
+  max-width: 17em;
+  font-size: 14px;
+}
+
+.listening-card-trends p {
+  font-weight: bold;
+  font-size: 25px;
+  max-width: 10em;
+}
+
+.link-listen-now {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
+  width: 9em;
+  background-color: white;
+  border-radius: 25px;
+  padding: 0.5em;
+}
+
+.link-listen-now a {
+  text-decoration: none;
+  color: var(--orange);
+  padding: 4px;
+}
+
+.link-listen-now img {
+  height: 1.5em;
 }
 
 
