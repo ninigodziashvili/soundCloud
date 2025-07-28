@@ -6,9 +6,11 @@ function App() {
 
   return (
     <>
+      <div className="main-cont">
       <Sidebar />
       <div className="main-content">
         <ListeningCard/>
+      </div>
       </div>
     </>
   );
