@@ -11,9 +11,7 @@ function Sidebar() {
         <>
             <style>{`
  .sidebar {
-  height: 100vh;
-  position: fixed;
-  top: 0;
+  height: 90em;
   left: 0;
   background: linear-gradient(to top, rgb(19, 10, 8), rgb(28, 16, 13), rgb(90, 51, 41));
   padding-top: 20px;
@@ -80,12 +78,13 @@ padding: 7px;
   cursor: pointer;
 }
 
-/* Media Query for Mobile */
+/* Media Query */
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .sidebar {
     width: 0 !important;
     overflow: hidden !important;
+    position: fixed; /* დაემატოს */
   }
 
   .sidebar.open {
@@ -93,19 +92,20 @@ padding: 7px;
     overflow: visible !important;
   }
 
+  .toggle-btn {
+    display: block !important;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+  }
+
   .main-content,
   .main-content.with-sidebar {
     margin-left: 0 !important;
   }
-
-  .toggle-btn {
-    display: block !important;
-  }
-
-  .sidebar .btn-close {
-    display: block !important;
-  }
 }
+
             `}</style>
             <div>
                 <a className="toggle-btn" onClick={toggleSidebar} style={{ cursor: "pointer" }}>
@@ -115,7 +115,13 @@ padding: 7px;
                 {/* Sidebar */}
                 <div className={`sidebar ${sidebarOpen ? "open" : "closed"}`}>
                     <div className="main-logo">
-                        <img src="https://images.seeklogo.com/logo-png/15/1/soundcloud-logo-png_seeklogo-157945.png" alt="" />
+                        <img
+                            src="https://images.seeklogo.com/logo-png/15/1/soundcloud-logo-png_seeklogo-157945.png"
+                            alt="Logo"
+                            style={{ cursor: 'pointer' }}
+                            onClick={() => window.location.reload()}
+                        />
+
                         <div className="perfile-datos">
                             <p>Hi</p>
                             <h3>Nino Godziashvili</h3>
